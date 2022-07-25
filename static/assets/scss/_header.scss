@@ -1,0 +1,80 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header {
+  height: 90px;
+  transition: all 0.5s;
+  z-index: 997;
+  background: #f2f2f2;
+
+  &.sticked {
+    height: 70px;
+  }
+
+  .logo {
+    img {
+      max-height: 40px;
+      margin-right: 6px;
+    }
+    
+    h1 {
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--color-default);
+      font-family: var(--font-primary);
+    }
+
+  }
+}
+
+.search-form-wrap {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  transition: .3s all ease;
+  visibility: hidden;
+  opacity: 0;
+  .search-form {
+    position: relative;
+    .form-control {
+      width: 300px;
+      border: none;
+      box-shadow: 0 15px 20px -10px rgba(var(--color-black-rgb), .1);
+      padding-left: 40px;
+      padding-right: 40px;
+      &:active, &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    .icon {
+      position: absolute;
+      left: 0;
+      top: 7px;
+      opacity: .5;
+      left: 10px;
+    }
+    .btn {
+      position: absolute;
+      top: 2px;
+      right: 4px;
+      padding: 0;
+      margin: 0;
+      line-height: 1;
+      font-size: 30px;
+      &:active, &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+section {
+  scroll-margin-top: 70px;
+}
