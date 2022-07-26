@@ -1,4 +1,5 @@
 <template>
+<div id="app">
     <section class="contact">
       <div class="container">
 
@@ -38,4 +39,5 @@
 
       </div>
     </section>
+    </div>
 </template>
